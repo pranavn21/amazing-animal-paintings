@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductListComponent } from './product-list/product-list.component';
 import {MatCard, MatCardModule} from '@angular/material/card';
-
+import { FlexModule } from '@angular/flex-layout';
+import {MatSnackBarModule} from '@angular/material/snack-bar'
 
 
 @NgModule({
@@ -11,7 +12,10 @@ import {MatCard, MatCardModule} from '@angular/material/card';
   ],
   imports: [
     CommonModule,
-    MatCardModule
+    MatCard,
+    MatCardModule,
+    FlexModule,
+    MatSnackBarModule
   ]
 })
 export class ProductModule { }
